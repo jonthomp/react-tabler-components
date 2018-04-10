@@ -1,6 +1,6 @@
 # react-tabler-components
 
-> A WIP collection of React components for Tabler
+> A WIP collection of React components for [Tabler](https://github.com/tabler/tabler)
 
 [![NPM](https://img.shields.io/npm/v/react-tabler-components.svg)](https://www.npmjs.com/package/react-tabler-components) [![JavaScript Style Guide](https://img.shields.io/badge/code_style-standard-brightgreen.svg)](https://standardjs.com)
 
