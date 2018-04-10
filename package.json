@@ -18,7 +18,8 @@
     "deploy": "gh-pages -d example/build"
   },
   "dependencies": {
-    "classnames": "^2.2.5"
+    "classnames": "^2.2.5",
+    "recompose": "^0.26.0"
   },
   "peerDependencies": {
     "prop-types": "^15.5.4",
@@ -44,5 +45,7 @@
     "rollup-plugin-postcss": "^1.1.0",
     "rollup-plugin-url": "^1.3.0"
   },
-  "files": ["dist"]
+  "files": [
+    "dist"
+  ]
 }
