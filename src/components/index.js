@@ -12,3 +12,5 @@ export { default as Grid } from "./Grid";
 export { default as Card } from "./Card";
 export { default as Text } from "./Text";
 export { default as Table } from "./Table";
+export { default as Alert } from "./Alert";
+export { default as Progress } from "./Progress";
