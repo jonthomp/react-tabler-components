@@ -10,6 +10,8 @@ class Sidebar extends React.Component {
           href="https://github.com/jonthomp/react-tabler-components"
           className="mb-6"
           block
+          as="a"
+          primary
         >
           <i className="fe fe-github mr-2" /> Browse source code
         </Button>

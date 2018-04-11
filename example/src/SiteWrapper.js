@@ -32,6 +32,8 @@ class SiteWrapper extends Component {
                     target="_blank"
                     outline
                     size="sm"
+                    as="a"
+                    primary
                   >
                     Source code
                   </Button>
