@@ -9,6 +9,7 @@ class Sidebar extends React.Component {
         <Button
           href="https://github.com/jonthomp/react-tabler-components"
           className="mb-6"
+          block
         >
           <i className="fe fe-github mr-2" /> Browse source code
         </Button>
