@@ -8,12 +8,12 @@ const Progress = ({ className, size, ...props }) => {
 };
 
 Progress.propTypes = {
-  classname: PropTypes.string,
+  className: PropTypes.string,
   size: PropTypes.string
 };
 
 Progress.defaultProps = {
-  classname: "",
+  className: "",
   size: ""
 };
 

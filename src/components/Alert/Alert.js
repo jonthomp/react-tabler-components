@@ -8,12 +8,12 @@ const Alert = ({ className, primary, ...props }) => {
 };
 
 Alert.propTypes = {
-  classname: PropTypes.string,
+  className: PropTypes.string,
   primary: PropTypes.bool
 };
 
 Alert.defaultProps = {
-  classname: "",
+  className: "",
   primary: false
 };
 

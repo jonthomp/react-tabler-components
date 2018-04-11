@@ -1,8 +1,8 @@
 import React from "react";
 
 const PageHeader = ({ value, children, ...rest }) => (
-  <div class="page-header" {...rest}>
-    <h1 class="page-title">{value || children || null}</h1>
+  <div className="page-header" {...rest}>
+    <h1 className="page-title">{value || children || null}</h1>
   </div>
 );
 

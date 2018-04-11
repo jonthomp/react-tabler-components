@@ -11,12 +11,12 @@ const Header = ({ className, size, ...props }) => {
 };
 
 Header.propTypes = {
-  classname: PropTypes.string,
+  className: PropTypes.string,
   size: PropTypes.number
 };
 
 Header.defaultProps = {
-  classname: "",
+  className: "",
   size: 1
 };
 

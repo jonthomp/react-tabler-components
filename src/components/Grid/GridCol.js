@@ -18,7 +18,7 @@ GridCol.propTypes = {
 };
 
 GridCol.defaultProps = {
-  width: "",
+  width: null,
   sm: null,
   md: null,
   lg: null

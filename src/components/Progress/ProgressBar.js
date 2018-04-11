@@ -8,13 +8,13 @@ const ProgressBar = ({ className, color, width, ...props }) => {
 };
 
 ProgressBar.propTypes = {
-  classname: PropTypes.string,
+  className: PropTypes.string,
   color: PropTypes.string,
   width: PropTypes.number
 };
 
 ProgressBar.defaultProps = {
-  classname: "",
+  className: "",
   color: null,
   width: 0
 };
