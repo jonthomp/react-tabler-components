@@ -230,10 +230,40 @@ class SiteWrapper extends Component {
                   />
                   <Nav.Item
                     as={Link}
-                    to="/docs/index"
+                    to="/docs"
                     icon="file-text"
                     value="Documentation"
-                  />
+                  >
+                    <Nav.Submenu>
+                      <Nav.SubmenuItem as={Link} to="/docs/alerts">
+                        Alerts
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/docs/avatars">
+                        Avatars
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/docs/buttons">
+                        Buttons
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/docs/cards">
+                        Cards
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/docs/charts">
+                        Charts
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/docs/colors">
+                        Colors
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/docs/form-components">
+                        Form Components
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/docs/tags">
+                        Tags
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/docs/typography">
+                        Typography
+                      </Nav.SubmenuItem>
+                    </Nav.Submenu>
+                  </Nav.Item>
                 </Nav>
               </Grid.Col>
               <Grid.Col lg={3} className="ml-auto">

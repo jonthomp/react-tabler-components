@@ -23,7 +23,17 @@ import {
   Blog,
   Icons,
   Maps,
-  Store
+  Store,
+  DocsIntroduction,
+  DocsAlerts,
+  DocsAvatars,
+  DocsButtons,
+  DocsCards,
+  DocsColors,
+  DocsCharts,
+  DocsFormComponents,
+  DocsTags,
+  DocsTypography
 } from "./pages";
 
 class App extends Component {
@@ -34,7 +44,6 @@ class App extends Component {
           <Route exact path="/" component={Home} />
           <Route exact path="/gallery" component={Gallery} />
           <Route exact path="/form-elements" component={Forms} />
-          <Route exact path="/docs/index" component={Documentation} />
           <Route exact path="/email" component={Email} />
           <Route exact path="/empty" component={EmptyPage} />
           <Route exact path="/400" component={Error400} />
@@ -54,6 +63,21 @@ class App extends Component {
           <Route exact path="/icons" component={Icons} />
           <Route exact path="/maps" component={Maps} />
           <Route exact path="/store" component={Store} />
+
+          <Route exact path="/docs" component={DocsIntroduction} />
+          <Route exact path="/docs/alerts" component={DocsAlerts} />
+          <Route exact path="/docs/avatars" component={DocsAvatars} />
+          <Route exact path="/docs/buttons" component={DocsButtons} />
+          <Route exact path="/docs/cards" component={DocsCards} />
+          <Route exact path="/docs/charts" component={DocsCharts} />
+          <Route exact path="/docs/colors" component={DocsColors} />
+          <Route
+            exact
+            path="/docs/form-components"
+            component={DocsFormComponents}
+          />
+          <Route exact path="/docs/tags" component={DocsTags} />
+          <Route exact path="/docs/typography" component={DocsTypography} />
         </React.Fragment>
       </Router>
     );
