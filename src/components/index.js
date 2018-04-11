@@ -15,3 +15,4 @@ export { default as Table } from "./Table";
 export { default as Alert } from "./Alert";
 export { default as Progress } from "./Progress";
 export { default as List } from "./List";
+export { default as Code } from "./Code";
