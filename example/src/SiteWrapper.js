@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Link } from "react-router-dom";
+import { NavLink } from "react-router-dom";
 
 import {
   Page,
@@ -28,8 +28,10 @@ class SiteWrapper extends Component {
               <div className="ml-auto d-flex order-lg-2">
                 <Nav.Item as="div" className="d-none d-md-flex">
                   <Button
-                    href="https://github.com/tabler/tabler"
+                    href="https://github.com/jonthomp/react-tabler-components"
                     target="_blank"
+                    outline
+                    size="sm"
                   >
                     Source code
                   </Button>
@@ -124,13 +126,7 @@ class SiteWrapper extends Component {
             <Grid.Row className="align-items-center">
               <Grid.Col className="col-lg order-lg-first">
                 <Nav>
-                  <Nav.Item
-                    icon="home"
-                    as={Link}
-                    to="/"
-                    value="Home"
-                    active={true}
-                  />
+                  <Nav.Item icon="home" as={NavLink} to="/" value="Home" />
 
                   <Nav.Item
                     href="javascript:void(0)"
@@ -139,14 +135,14 @@ class SiteWrapper extends Component {
                   >
                     <Nav.Submenu>
                       <Nav.SubmenuItem
-                        as={Link}
+                        as={NavLink}
                         to="/cards"
                         children={"Cards Design"}
                       />
-                      <Nav.SubmenuItem as={Link} to="/charts">
+                      <Nav.SubmenuItem as={NavLink} to="/charts">
                         Charts
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/pricing-cards">
+                      <Nav.SubmenuItem as={NavLink} to="/pricing-cards">
                         Pricing cards
                       </Nav.SubmenuItem>
                     </Nav.Submenu>
@@ -158,16 +154,16 @@ class SiteWrapper extends Component {
                     value="Components"
                   >
                     <Nav.Submenu>
-                      <Nav.SubmenuItem as={Link} to="/maps">
+                      <Nav.SubmenuItem as={NavLink} to="/maps">
                         Maps
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/icons">
+                      <Nav.SubmenuItem as={NavLink} to="/icons">
                         Icons
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/store">
+                      <Nav.SubmenuItem as={NavLink} to="/store">
                         Store
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/blog">
+                      <Nav.SubmenuItem as={NavLink} to="/blog">
                         Blog
                       </Nav.SubmenuItem>
                     </Nav.Submenu>
@@ -178,88 +174,88 @@ class SiteWrapper extends Component {
                     value="Pages"
                   >
                     <Nav.Submenu>
-                      <Nav.SubmenuItem as={Link} to="/profile">
+                      <Nav.SubmenuItem as={NavLink} to="/profile">
                         Profile
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/login">
+                      <Nav.SubmenuItem as={NavLink} to="/login">
                         Login
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/register">
+                      <Nav.SubmenuItem as={NavLink} to="/register">
                         Register
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/forgot-password">
+                      <Nav.SubmenuItem as={NavLink} to="/forgot-password">
                         Forgot password
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/400">
+                      <Nav.SubmenuItem as={NavLink} to="/400">
                         400 error
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/401">
+                      <Nav.SubmenuItem as={NavLink} to="/401">
                         401 error
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/403">
+                      <Nav.SubmenuItem as={NavLink} to="/403">
                         403 error
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/404">
+                      <Nav.SubmenuItem as={NavLink} to="/404">
                         404 error
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/500">
+                      <Nav.SubmenuItem as={NavLink} to="/500">
                         500 error
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/503">
+                      <Nav.SubmenuItem as={NavLink} to="/503">
                         503 error
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/email">
+                      <Nav.SubmenuItem as={NavLink} to="/email">
                         Email
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/empty">
+                      <Nav.SubmenuItem as={NavLink} to="/empty">
                         Empty page
                       </Nav.SubmenuItem>
                     </Nav.Submenu>
                   </Nav.Item>
                   <Nav.Item
-                    as={Link}
+                    as={NavLink}
                     to="/form-elements"
                     icon="check-square"
                     value="Forms"
                   />
                   <Nav.Item
-                    as={Link}
+                    as={NavLink}
                     to="/gallery"
                     icon="image"
                     value="Gallery"
                   />
                   <Nav.Item
-                    as={Link}
-                    to="/docs"
+                    as={NavLink}
+                    to="/docs/intro"
                     icon="file-text"
                     value="Documentation"
                   >
                     <Nav.Submenu>
-                      <Nav.SubmenuItem as={Link} to="/docs/alerts">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/alerts">
                         Alerts
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/docs/avatars">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/avatars">
                         Avatars
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/docs/buttons">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/buttons">
                         Buttons
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/docs/cards">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/cards">
                         Cards
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/docs/charts">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/charts">
                         Charts
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/docs/colors">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/colors">
                         Colors
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/docs/form-components">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/form-components">
                         Form Components
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/docs/tags">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/tags">
                         Tags
                       </Nav.SubmenuItem>
-                      <Nav.SubmenuItem as={Link} to="/docs/typography">
+                      <Nav.SubmenuItem as={NavLink} to="/docs/typography">
                         Typography
                       </Nav.SubmenuItem>
                     </Nav.Submenu>

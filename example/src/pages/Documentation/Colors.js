@@ -2,17 +2,11 @@ import React, { Component } from "react";
 
 import { Page } from "react-tabler-components";
 
-import SiteWrapper from "../../SiteWrapper";
+import DocsWrapper from "./DocsWrapper";
 
 class Colors extends Component {
   render() {
-    return (
-      <SiteWrapper>
-        <Page.Content>
-          <Page.Header>Colors</Page.Header>
-        </Page.Content>
-      </SiteWrapper>
-    );
+    return <DocsWrapper title="Colors">{"content"}</DocsWrapper>;
   }
 }
 export default Colors;
