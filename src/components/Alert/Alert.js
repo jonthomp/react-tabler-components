@@ -3,7 +3,18 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import { Icon } from "../";
 
-const Alert = ({ className, children, primary, icon, ...props }) => {
+const Alert = ({
+  className,
+  children,
+  primary,
+  secondary,
+  success,
+  info,
+  warning,
+  danger,
+  icon,
+  ...props
+}) => {
   const classes = cn(
     `alert`,
     {
