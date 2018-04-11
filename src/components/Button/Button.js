@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import cn from "classnames";
 import withComponentFromAsProp from "../withComponentFromAsProp";
 
-const Component = withComponentFromAsProp("a");
+const Component = withComponentFromAsProp("button");
 
 const Button = ({
   size,
