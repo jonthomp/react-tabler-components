@@ -11,7 +11,7 @@ class DocsWrapper extends Component {
     return (
       <SiteWrapper>
         <Page.ContentWithSidebar
-          header={<Page.Header>{title}</Page.Header>}
+          header={<Page.Header>Documentation</Page.Header>}
           sidebar={<Sidebar />}
         >
           <Card>
