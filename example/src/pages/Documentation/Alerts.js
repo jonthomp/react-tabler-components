@@ -177,6 +177,25 @@ dolor sit amet, consectetur adipisicing elit.
 </Alert>`}
           </SyntaxHighlighter>
         </Code.Highlight>
+
+        <Header.H3>Alert with extra space</Header.H3>
+
+        <Code.Example>
+          <span>Content Above</span>
+          <Alert primary extraSpace>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          </Alert>
+          <span>Content Below</span>
+        </Code.Example>
+        <Code.Highlight>
+          <SyntaxHighlighter language="jsx" style={prism}>
+            {`<span>Content Above</span>
+  <Alert primary extraSpace>
+    Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+  </Alert>
+  <span>Content Below</span>`}
+          </SyntaxHighlighter>
+        </Code.Highlight>
       </DocsWrapper>
     );
   }
