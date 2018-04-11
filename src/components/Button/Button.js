@@ -1,12 +1,17 @@
 import React from "react";
 import PropTypes from "prop-types";
 import cn from "classnames";
+import withComponentFromAsProp from "../withComponentFromAsProp";
+
+const Component = withComponentFromAsProp("a");
 
 const Button = ({
-  as: Component,
   size,
   outline,
   primary,
+  secondary,
+  success,
+  block,
   className,
   ...rest
 }) => {
@@ -16,7 +21,9 @@ const Button = ({
       [`btn-${size}`]: !!size,
       [`btn-outline-primary`]: outline && primary,
       [`btn-primary`]: primary,
-      [`btn-block`]: primary && !outline
+      [`btn-block`]: block,
+      [`btn-secondary`]: secondary,
+      [`btn-success`]: success
     },
     className
   );
@@ -24,17 +31,21 @@ const Button = ({
 };
 
 Button.propTypes = {
-  as: PropTypes.node,
   size: PropTypes.string,
   primary: PropTypes.bool,
-  outline: PropTypes.bool
+  secondary: PropTypes.bool,
+  success: PropTypes.bool,
+  outline: PropTypes.bool,
+  block: PropTypes.bool
 };
 
 Button.defaultProps = {
-  as: "a",
   size: null,
   primary: true,
-  outline: false
+  secondary: false,
+  success: false,
+  outline: false,
+  block: false
 };
 
 export default Button;
