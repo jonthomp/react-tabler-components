@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { Link } from "react-router-dom";
 
 import {
   Page,
@@ -119,7 +120,137 @@ class SiteWrapper extends Component {
               </div>
             </div>
           </Site.Header>
-          <Site.Navbar />
+          <Site.Navbar>
+            <Grid.Row className="align-items-center">
+              <Grid.Col className="col-lg order-lg-first">
+                <Nav>
+                  <Nav.Item
+                    icon="home"
+                    as={Link}
+                    to="/"
+                    value="Home"
+                    active={true}
+                  />
+
+                  <Nav.Item
+                    href="javascript:void(0)"
+                    icon="box"
+                    value="Interface"
+                  >
+                    <Nav.Submenu>
+                      <Nav.SubmenuItem
+                        as={Link}
+                        to="/cards"
+                        children={"Cards Design"}
+                      />
+                      <Nav.SubmenuItem as={Link} to="/charts">
+                        Charts
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/pricing-cards">
+                        Pricing cards
+                      </Nav.SubmenuItem>
+                    </Nav.Submenu>
+                  </Nav.Item>
+
+                  <Nav.Item
+                    href="javascript:void(0)"
+                    icon="calendar"
+                    value="Components"
+                  >
+                    <Nav.Submenu>
+                      <Nav.SubmenuItem as={Link} to="/maps">
+                        Maps
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/icons">
+                        Icons
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/store">
+                        Store
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/blog">
+                        Blog
+                      </Nav.SubmenuItem>
+                    </Nav.Submenu>
+                  </Nav.Item>
+                  <Nav.Item
+                    href="javascript:void(0)"
+                    icon={"file"}
+                    value="Pages"
+                  >
+                    <Nav.Submenu>
+                      <Nav.SubmenuItem as={Link} to="/profile">
+                        Profile
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/login">
+                        Login
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/register">
+                        Register
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/forgot-password">
+                        Forgot password
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/400">
+                        400 error
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/401">
+                        401 error
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/403">
+                        403 error
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/404">
+                        404 error
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/500">
+                        500 error
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/503">
+                        503 error
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/email">
+                        Email
+                      </Nav.SubmenuItem>
+                      <Nav.SubmenuItem as={Link} to="/empty">
+                        Empty page
+                      </Nav.SubmenuItem>
+                    </Nav.Submenu>
+                  </Nav.Item>
+                  <Nav.Item
+                    as={Link}
+                    to="/form-elements"
+                    icon="check-square"
+                    value="Forms"
+                  />
+                  <Nav.Item
+                    as={Link}
+                    to="/gallery"
+                    icon="image"
+                    value="Gallery"
+                  />
+                  <Nav.Item
+                    as={Link}
+                    to="/docs/index"
+                    icon="file-text"
+                    value="Documentation"
+                  />
+                </Nav>
+              </Grid.Col>
+              <Grid.Col lg={3} className="ml-auto">
+                <form className="input-icon">
+                  <input
+                    type="search"
+                    className="form-control header-search"
+                    placeholder="Search&hellip;"
+                    tabIndex="1"
+                  />
+                  <div className="input-icon-addon">
+                    <i className="fe fe-search" />
+                  </div>
+                </form>
+              </Grid.Col>
+            </Grid.Row>
+          </Site.Navbar>
           {this.props.children}
         </Page.Main>
       </Page>

@@ -1,7 +1,8 @@
 import React from "react";
-import { Icon } from "../";
+import PropTypes from "prop-types";
+import { Nav, Icon } from "../";
 
-const NavLink = ({
+const NavSubmenuItem = ({
   className,
   icon,
   children,
@@ -10,7 +11,7 @@ const NavLink = ({
   ...rest
 }) => (
   <Component
-    className={`nav-link ${active ? `active` : ``} ${className}`}
+    className={`nav-item ${active ? `active` : ``} ${className}`}
     {...rest}
   >
     {icon && (
@@ -22,4 +23,4 @@ const NavLink = ({
   </Component>
 );
 
-export default NavLink;
+export default NavSubmenuItem;
