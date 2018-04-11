@@ -55,7 +55,7 @@ class SiteWrapper extends Component {
                     <Dropdown.Item className="d-flex">
                       <Avatar
                         className="mr-3 align-self-center"
-                        src="demo/faces/male/41.jpg"
+                        image="demo/faces/male/41.jpg"
                       />
                       <div>
                         <strong>Nathan</strong> pushed new commit: Fix page load
@@ -68,7 +68,7 @@ class SiteWrapper extends Component {
                     <Dropdown.Item className=" d-flex">
                       <Avatar
                         className="mr-3 align-self-center"
-                        src={"demo/faces/female/1.jpg"}
+                        imnage={"demo/faces/female/1.jpg"}
                       />
                       <div>
                         <strong>Alice</strong> started new task: Tabler UI
@@ -81,7 +81,7 @@ class SiteWrapper extends Component {
                     <Dropdown.Item className="d-flex">
                       <Avatar
                         className="mr-3 align-self-center"
-                        src={"demo/faces/female/18.jpg"}
+                        image={"demo/faces/female/18.jpg"}
                       />
                       <div>
                         <strong>Rose</strong> deployed new version of NodeJS
@@ -100,7 +100,7 @@ class SiteWrapper extends Component {
 
                 <Dropdown>
                   <Dropdown.Label className="pr-0">
-                    <Avatar src={"./demo/faces/female/25.jpg"} />
+                    <Avatar image={"./demo/faces/female/25.jpg"} />
                     <span className="ml-2 d-none d-lg-block">
                       <span className="text-default">Jane Pearson</span>
                       <small className="text-muted d-block mt-1">
