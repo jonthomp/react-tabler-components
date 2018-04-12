@@ -35,6 +35,109 @@ class Buttons extends Component {
           </SyntaxHighlighter>
         </Code.Highlight>
 
+        <Header.H3>Button List</Header.H3>
+
+        <Code.Example>
+          <Button.List>
+            <Button success>Save changes</Button>
+            <Button secondary>Save and continue</Button>
+            <Button danger>Cancel</Button>
+          </Button.List>
+        </Code.Example>
+        <Code.Highlight>
+          <SyntaxHighlighter language="jsx" style={prism}>
+            {`<Button.List>
+  <Button success>Save changes</Button>
+  <Button secondary>Save and continue</Button>
+  <Button danger>Cancel</Button>
+</Button.List>`}
+          </SyntaxHighlighter>
+        </Code.Highlight>
+
+        <p>
+          If the list is very long, it will automatically wrap on multiple
+          lines, while keeping all buttons evenly spaced.
+        </p>
+
+        <Code.Example>
+          <Button.List>
+            <Button secondary>One</Button>
+            <Button secondary>Two</Button>
+            <Button secondary>Three</Button>
+            <Button secondary>Four</Button>
+            <Button secondary>Five</Button>
+            <Button secondary>Six</Button>
+            <Button secondary>Seven</Button>
+            <Button secondary>Eight</Button>
+            <Button secondary>Nine</Button>
+            <Button secondary>Ten</Button>
+            <Button secondary>Eleven</Button>
+            <Button secondary>Twelve</Button>
+            <Button secondary>Thirteen</Button>
+            <Button secondary>Fourteen</Button>
+            <Button secondary>Fifteen</Button>
+            <Button secondary>Sixteen</Button>
+            <Button secondary>Seventeen</Button>
+            <Button secondary>Eighteen</Button>
+            <Button secondary>Nineteen</Button>
+          </Button.List>
+        </Code.Example>
+        <Code.Highlight>
+          <SyntaxHighlighter language="jsx" style={prism}>
+            {`<Button secondary>One</Button>
+  <Button secondary>Two</Button>
+  <Button secondary>Three</Button>
+  <Button secondary>Four</Button>
+  <Button secondary>Five</Button>
+  <Button secondary>Six</Button>
+  <Button secondary>Seven</Button>
+  <Button secondary>Eight</Button>
+  <Button secondary>Nine</Button>
+  <Button secondary>Ten</Button>
+  <Button secondary>Eleven</Button>
+  <Button secondary>Twelve</Button>
+  <Button secondary>Thirteen</Button>
+  <Button secondary>Fourteen</Button>
+  <Button secondary>Fifteen</Button>
+  <Button secondary>Sixteen</Button>
+  <Button secondary>Seventeen</Button>
+  <Button secondary>Eighteen</Button>
+  <Button secondary>Nineteen</Button>
+</Button.List>`}
+          </SyntaxHighlighter>
+        </Code.Highlight>
+
+        <Header.H4>List Buttons Alignment</Header.H4>
+
+        <Code.Example>
+          <Button.List align="center">
+            <Button primary>Primary</Button>
+            <Button secondary>Secondary</Button>
+          </Button.List>
+        </Code.Example>
+        <Code.Highlight>
+          <SyntaxHighlighter language="jsx" style={prism}>
+            {`<Button.List align="center">
+  <Button primary>Primary</Button>
+  <Button secondary>Secondary</Button>
+</Button.List>`}
+          </SyntaxHighlighter>
+        </Code.Highlight>
+        <Code.Example>
+          <Button.List align="right">
+            <Button primary>Primary</Button>
+            <Button secondary>Secondary</Button>
+          </Button.List>
+        </Code.Example>
+        <Code.Highlight>
+          <SyntaxHighlighter language="jsx" style={prism}>
+            {`<Button.List align="right">
+  <Button primary>Primary</Button>
+  <Button secondary>Secondary</Button>
+</Button.List>`}
+          </SyntaxHighlighter>
+        </Code.Highlight>
+
         <Header.H3>Button Variations</Header.H3>
 
         <Code.Example>
@@ -453,6 +556,37 @@ class Buttons extends Component {
       <Dropdown.Item>Dropdown Link</Dropdown.Item>
     </Dropdown.Menu>
   </Dropdown>
+</Button.List>`}
+          </SyntaxHighlighter>
+        </Code.Highlight>
+
+        <Header.H3>Loading Buttons</Header.H3>
+
+        <Code.Example>
+          <Button.List>
+            <Button loading primary>
+              Button text
+            </Button>
+            <Button loading success icon="check" />
+            <Button loading warning size="sm">
+              Button text
+            </Button>
+            <Button loading danger size="lg">
+              Button text
+            </Button>
+            <Button loading secondary block>
+              Button text
+            </Button>
+          </Button.List>
+        </Code.Example>
+        <Code.Highlight>
+          <SyntaxHighlighter language="jsx" style={prism}>
+            {`<Button.List>
+  <Button loading primary >Button text</Button>
+  <Button loading success icon="check" />
+  <Button loading warning size="sm">Button text</Button>
+  <Button loading danger size="lg">Button text</Button>
+  <Button loading secondary block>Button text</Button>
 </Button.List>`}
           </SyntaxHighlighter>
         </Code.Highlight>

@@ -22,6 +22,7 @@ const Button = ({
   pill,
   icon,
   social,
+  loading,
   as: Component,
   ...rest
 }) => {
@@ -48,7 +49,8 @@ const Button = ({
       [`btn-${social}`]: !!social,
       "btn-square": square,
       "btn-pill": pill,
-      "btn-icon": !children
+      "btn-icon": !children,
+      "btn-loading": loading
     },
     className
   );
@@ -83,7 +85,8 @@ Button.propTypes = {
   square: PropTypes.bool,
   pill: PropTypes.bool,
   icon: PropTypes.string,
-  social: PropTypes.string
+  social: PropTypes.string,
+  loading: PropTypes.bool
 };
 
 Button.defaultProps = {
@@ -103,7 +106,8 @@ Button.defaultProps = {
   square: false,
   pill: false,
   icon: null,
-  social: null
+  social: null,
+  loading: false
 };
 
 export default Button;
