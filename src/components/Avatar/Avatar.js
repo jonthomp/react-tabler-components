@@ -50,8 +50,8 @@ Avatar.propTypes = {
   className: PropTypes.string,
   image: PropTypes.string,
   style: PropTypes.object,
-  size: PropTypes.oneOf("sm", "md", "lg", "xl", "xxl"),
-  status: PropTypes.oneOf("grey", "red", "yellow", "green"),
+  size: PropTypes.oneOf(["sm", "md", "lg", "xl", "xxl"]),
+  status: PropTypes.oneOf(["grey", "red", "yellow", "green"]),
   placeholder: PropTypes.bool,
   icon: PropTypes.string,
   color: PropTypes.string

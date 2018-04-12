@@ -23,6 +23,7 @@ const Button = ({
   icon,
   social,
   loading,
+  toggle,
   as: Component,
   ...rest
 }) => {
@@ -50,7 +51,8 @@ const Button = ({
       "btn-square": square,
       "btn-pill": pill,
       "btn-icon": !children,
-      "btn-loading": loading
+      "btn-loading": loading,
+      "dropdown-toggle": toggle
     },
     className
   );
@@ -69,7 +71,7 @@ const Button = ({
 };
 
 Button.propTypes = {
-  size: PropTypes.oneOf("sm", "lg"),
+  size: PropTypes.oneOf(["sm", "lg"]),
   primary: PropTypes.bool,
   secondary: PropTypes.bool,
   success: PropTypes.bool,
@@ -86,7 +88,8 @@ Button.propTypes = {
   pill: PropTypes.bool,
   icon: PropTypes.string,
   social: PropTypes.string,
-  loading: PropTypes.bool
+  loading: PropTypes.bool,
+  toggle: PropTypes.bool
 };
 
 Button.defaultProps = {
@@ -107,7 +110,8 @@ Button.defaultProps = {
   pill: false,
   icon: null,
   social: null,
-  loading: false
+  loading: false,
+  toggle: false
 };
 
 export default Button;

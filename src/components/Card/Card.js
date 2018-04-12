@@ -8,7 +8,7 @@ const Card = ({ className, as: Component, ...props }) => {
 };
 
 Card.propTypes = {
-  as: PropTypes.node
+  as: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
 };
 
 Card.defaultProps = {

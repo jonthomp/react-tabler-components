@@ -14,7 +14,7 @@ Icon.propTypes = {
   name: PropTypes.string.isRequired,
   className: PropTypes.string,
   link: PropTypes.bool,
-  prefix: PropTypes.oneOf("fa", "fe")
+  prefix: PropTypes.oneOf(["fa", "fe"])
 };
 
 Icon.defaultProps = {
