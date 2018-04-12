@@ -1,6 +1,6 @@
 {
   "name": "react-tabler-components",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "A collection of React components for Tabler",
   "author": "jonthomp",
   "license": "MIT",
@@ -19,6 +19,7 @@
   },
   "dependencies": {
     "classnames": "^2.2.5",
+    "eslint-plugin-promise": "^3.7.0",
     "recompose": "^0.26.0"
   },
   "peerDependencies": {
@@ -33,6 +34,11 @@
     "babel-preset-env": "^1.6.0",
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
+    "eslint-config-standard": "^11.0.0",
+    "eslint-config-standard-react": "^6.0.0",
+    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-react": "^7.7.0",
+    "eslint-plugin-standard": "^3.0.1",
     "gh-pages": "^1.1.0",
     "react": "^16.2.0",
     "react-dom": "^16.2.0",
