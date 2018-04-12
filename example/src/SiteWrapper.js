@@ -40,7 +40,11 @@ class SiteWrapper extends Component {
                 </Nav.Item>
 
                 <Dropdown desktopOnly={true}>
-                  <Dropdown.Label icon="message-square" />
+                  <Dropdown.Trigger
+                    as="a"
+                    className="nav-link"
+                    icon="message-square"
+                  />
                   <Dropdown.Menu position="right" arrow={true} className="px-4">
                     Lorem ipsum dolor sit amet, consectetur adipisicing elit.
                     Accusantium architecto asperiores dolorem, est fugiat in
@@ -50,9 +54,9 @@ class SiteWrapper extends Component {
                 </Dropdown>
 
                 <Dropdown desktopOnly={true}>
-                  <Dropdown.Label icon="bell">
+                  <Dropdown.Trigger as="a" className="nav-link" icon="bell">
                     <span className="nav-unread" />
-                  </Dropdown.Label>
+                  </Dropdown.Trigger>
                   <Dropdown.Menu position="right" arrow={true}>
                     <Dropdown.Item className="d-flex">
                       <Avatar
@@ -101,7 +105,7 @@ class SiteWrapper extends Component {
                 </Dropdown>
 
                 <Dropdown>
-                  <Dropdown.Label className="pr-0">
+                  <Dropdown.Trigger as="a" className="nav-link pr-0">
                     <Avatar image={"./demo/faces/female/25.jpg"} />
                     <span className="ml-2 d-none d-lg-block">
                       <span className="text-default">Jane Pearson</span>
@@ -109,7 +113,7 @@ class SiteWrapper extends Component {
                         Administrator
                       </small>
                     </span>
-                  </Dropdown.Label>
+                  </Dropdown.Trigger>
 
                   <Dropdown.Menu position="right" arrow={true}>
                     <Dropdown.Item icon="user" value="Profile" />
