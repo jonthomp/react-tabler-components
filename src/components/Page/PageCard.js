@@ -3,12 +3,19 @@ import PropTypes from "prop-types";
 
 import { Grid, Card, Container } from "../";
 
-const PageCard = ({ children, title, header, footer, ...rest }) => (
+const PageCard = ({
+  children,
+  title,
+  header,
+  footer,
+  as: Component,
+  ...rest
+}) => (
   <div className="my-3 my-md-5">
     <Container>
       <Grid.Row>
         <Grid.Col width={12}>
-          <Card>
+          <Card as={Component}>
             {title && (
               <Card.Header>
                 <Card.Title>{title}</Card.Title>
@@ -27,13 +34,15 @@ const PageCard = ({ children, title, header, footer, ...rest }) => (
 PageCard.propTypes = {
   title: PropTypes.string,
   header: PropTypes.node,
-  footer: PropTypes.node
+  footer: PropTypes.node,
+  as: PropTypes.node
 };
 
 PageCard.defaultProps = {
   title: null,
   header: null,
-  footer: null
+  footer: null,
+  as: Card
 };
 
 export default PageCard;
