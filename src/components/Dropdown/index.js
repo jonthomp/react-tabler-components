@@ -1,9 +1,9 @@
 import Dropdown from "./Dropdown";
-import DropdownLabel from "./DropdownLabel";
+import DropdownTrigger from "./DropdownTrigger";
 import DropdownMenu from "./DropdownMenu";
 import DropdownItem from "./DropdownItem";
 import DropdownItemDivider from "./DropdownItemDivider";
-Dropdown.Label = DropdownLabel;
+Dropdown.Trigger = DropdownTrigger;
 Dropdown.Menu = DropdownMenu;
 Dropdown.Item = DropdownItem;
 Dropdown.ItemDivider = DropdownItemDivider;
