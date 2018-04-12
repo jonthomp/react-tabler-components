@@ -4,17 +4,12 @@ import { NavLink } from "react-router-dom";
 import {
   Page,
   Site,
-  Container,
   Button,
   Nav,
   Dropdown,
   Avatar,
-  Icon,
-  Badge,
   Grid,
-  Card,
-  Text,
-  Header
+  Text
 } from "react-tabler-components";
 
 class SiteWrapper extends Component {
@@ -134,11 +129,7 @@ class SiteWrapper extends Component {
                 <Nav>
                   <Nav.Item icon="home" as={NavLink} to="/" value="Home" />
 
-                  <Nav.Item
-                    href="javascript:void(0)"
-                    icon="box"
-                    value="Interface"
-                  >
+                  <Nav.Item icon="box" value="Interface">
                     <Nav.Submenu>
                       <Nav.SubmenuItem
                         as={NavLink}
@@ -154,11 +145,7 @@ class SiteWrapper extends Component {
                     </Nav.Submenu>
                   </Nav.Item>
 
-                  <Nav.Item
-                    href="javascript:void(0)"
-                    icon="calendar"
-                    value="Components"
-                  >
+                  <Nav.Item icon="calendar" value="Components">
                     <Nav.Submenu>
                       <Nav.SubmenuItem as={NavLink} to="/maps">
                         Maps
@@ -174,11 +161,7 @@ class SiteWrapper extends Component {
                       </Nav.SubmenuItem>
                     </Nav.Submenu>
                   </Nav.Item>
-                  <Nav.Item
-                    href="javascript:void(0)"
-                    icon={"file"}
-                    value="Pages"
-                  >
+                  <Nav.Item icon={"file"} value="Pages">
                     <Nav.Submenu>
                       <Nav.SubmenuItem as={NavLink} to="/profile">
                         Profile

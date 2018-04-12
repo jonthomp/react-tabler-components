@@ -2,14 +2,8 @@ import React, { Component } from "react";
 
 import {
   Page,
-  Site,
-  Container,
-  Button,
-  Nav,
-  Dropdown,
   Avatar,
   Icon,
-  Badge,
   Grid,
   Card,
   Text,
@@ -144,7 +138,7 @@ class Home extends Component {
                       <Table.Col>Initial commit</Table.Col>
                       <Table.Col className="text-nowrap">May 6, 2018</Table.Col>
                       <Table.Col className="w-1">
-                        <Icon link={true} href="#" name="trash" />
+                        <Icon link={true} name="trash" />
                       </Table.Col>
                     </Table.Row>
                     <Table.Row>
@@ -157,7 +151,7 @@ class Home extends Component {
                         April 22, 2018
                       </Table.Col>
                       <Table.Col>
-                        <Icon link={true} href="#" name="trash" />
+                        <Icon link={true} name="trash" />
                       </Table.Col>
                     </Table.Row>
                     <Table.Row>
@@ -170,7 +164,7 @@ class Home extends Component {
                         April 15, 2018
                       </Table.Col>
                       <Table.Col>
-                        <Icon link={true} href="#" name="trash" />
+                        <Icon link={true} name="trash" />
                       </Table.Col>
                     </Table.Row>
                     <Table.Row>
@@ -183,7 +177,7 @@ class Home extends Component {
                         April 8, 2018
                       </Table.Col>
                       <Table.Col>
-                        <Icon link={true} href="#" name="trash" />
+                        <Icon link={true} name="trash" />
                       </Table.Col>
                     </Table.Row>
                     <Table.Row>
@@ -196,7 +190,7 @@ class Home extends Component {
                         April 9, 2018
                       </Table.Col>
                       <Table.Col>
-                        <Icon link={true} href="#" name="trash" />
+                        <Icon link={true} name="trash" />
                       </Table.Col>
                     </Table.Row>
                   </Table.Body>
@@ -278,7 +272,7 @@ class Home extends Component {
                   </span>
                   <div>
                     <h4 className="m-0">
-                      <a href="javascript:void(0)">
+                      <a>
                         132
                         <small>Sales</small>
                       </a>
@@ -296,7 +290,7 @@ class Home extends Component {
                   </span>
                   <div>
                     <h4 className="m-0">
-                      <a href="javascript:void(0)">
+                      <a>
                         78
                         <small>Orders</small>
                       </a>
@@ -314,7 +308,7 @@ class Home extends Component {
                   </span>
                   <div>
                     <h4 className="m-0">
-                      <a href="javascript:void(0)">
+                      <a>
                         1,352
                         <small>Members</small>
                       </a>
@@ -332,7 +326,7 @@ class Home extends Component {
                   </span>
                   <div>
                     <h4 className="m-0">
-                      <a href="javascript:void(0)">
+                      <a>
                         132
                         <small>Comments</small>
                       </a>
@@ -347,13 +341,13 @@ class Home extends Component {
             <div className="col-lg-6">
               <div className="card card-aside">
                 <a
-                  href="#"
+                  
                   className="card-aside-column"
                   style="background-image: url(./demo/photos/david-klaasen-54203-500.jpg)"
                 />
                 <div className="card-body d-flex flex-column">
                   <h4>
-                    <a href="#">And this isn't my nose. This is a false one.</a>
+                    <a >And this isn't my nose. This is a false one.</a>
                   </h4>
                   <div className="text-muted">
                     Look, my liege! The Knights Who Say Ni demand a sacrifice!
@@ -372,7 +366,7 @@ class Home extends Component {
                     </div>
                     <div className="ml-auto text-muted">
                       <a
-                        href="javascript:void(0)"
+                        href='#'
                         className="icon d-none d-md-inline-block ml-3"
                       >
                         <i className="fe fe-heart mr-1" />
@@ -385,13 +379,13 @@ class Home extends Component {
             <div className="col-lg-6">
               <div className="card card-aside">
                 <a
-                  href="#"
+                  
                   className="card-aside-column"
                   style="background-image: url(./demo/photos/david-marcu-114194-500.jpg)"
                 />
                 <div className="card-body d-flex flex-column">
                   <h4>
-                    <a href="#">Well, I didn't vote for you.</a>
+                    <a >Well, I didn't vote for you.</a>
                   </h4>
                   <div className="text-muted">
                     Well, we did do the nose. Why? Shut up! Will you shut up?!
@@ -410,7 +404,7 @@ class Home extends Component {
                     </div>
                     <div className="ml-auto text-muted">
                       <a
-                        href="javascript:void(0)"
+                        href='#'
                         className="icon d-none d-md-inline-block ml-3"
                       >
                         <i className="fe fe-heart mr-1" />
@@ -499,7 +493,7 @@ class Home extends Component {
                         <td className="text-center">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -507,20 +501,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -528,7 +522,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -595,7 +589,7 @@ class Home extends Component {
                         <td className="text-center">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -603,20 +597,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -624,7 +618,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -691,7 +685,7 @@ class Home extends Component {
                         <td className="text-center">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -699,20 +693,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -720,7 +714,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -787,7 +781,7 @@ class Home extends Component {
                         <td className="text-center">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -795,20 +789,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -816,7 +810,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -883,7 +877,7 @@ class Home extends Component {
                         <td className="text-center">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -891,20 +885,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -912,7 +906,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -979,7 +973,7 @@ class Home extends Component {
                         <td className="text-center">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -987,20 +981,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1008,7 +1002,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1075,7 +1069,7 @@ class Home extends Component {
                         <td className="text-center">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -1083,20 +1077,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1104,7 +1098,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1171,7 +1165,7 @@ class Home extends Component {
                         <td className="text-center">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -1179,20 +1173,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1200,7 +1194,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1341,7 +1335,7 @@ class Home extends Component {
                         <div className="col">
                           <div>
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               className="text-inherit"
                             >
                               Amanda Hunt
@@ -1354,7 +1348,7 @@ class Home extends Component {
                         <div className="col-auto">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -1362,20 +1356,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1383,7 +1377,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1405,7 +1399,7 @@ class Home extends Component {
                         <div className="col">
                           <div>
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               className="text-inherit"
                             >
                               Laura Weaver
@@ -1418,7 +1412,7 @@ class Home extends Component {
                         <div className="col-auto">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -1426,20 +1420,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1447,7 +1441,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1469,7 +1463,7 @@ class Home extends Component {
                         <div className="col">
                           <div>
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               className="text-inherit"
                             >
                               Margaret Berry
@@ -1482,7 +1476,7 @@ class Home extends Component {
                         <div className="col-auto">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -1490,20 +1484,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1511,7 +1505,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1533,7 +1527,7 @@ class Home extends Component {
                         <div className="col">
                           <div>
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               className="text-inherit"
                             >
                               Nancy Herrera
@@ -1546,7 +1540,7 @@ class Home extends Component {
                         <div className="col-auto">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -1554,20 +1548,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1575,7 +1569,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1597,7 +1591,7 @@ class Home extends Component {
                         <div className="col">
                           <div>
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               className="text-inherit"
                             >
                               Edward Larson
@@ -1610,7 +1604,7 @@ class Home extends Component {
                         <div className="col-auto">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -1618,20 +1612,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1639,7 +1633,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1661,7 +1655,7 @@ class Home extends Component {
                         <div className="col">
                           <div>
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               className="text-inherit"
                             >
                               Joan Hanson
@@ -1674,7 +1668,7 @@ class Home extends Component {
                         <div className="col-auto">
                           <div className="item-action dropdown">
                             <a
-                              href="javascript:void(0)"
+                              href='#'
                               data-toggle="dropdown"
                               className="icon"
                             >
@@ -1682,20 +1676,20 @@ class Home extends Component {
                             </a>
                             <div className="dropdown-menu dropdown-menu-right">
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-tag" /> Action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-edit-2" />{" "}
                                 Another action{" "}
                               </a>
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-message-square" />{" "}
@@ -1703,7 +1697,7 @@ class Home extends Component {
                               </a>
                               <div className="dropdown-divider" />
                               <a
-                                href="javascript:void(0)"
+                                href='#'
                                 className="dropdown-item"
                               >
                                 <i className="dropdown-icon fe fe-link" />{" "}
@@ -1815,7 +1809,7 @@ class Home extends Component {
                         <td>$887</td>
                         <td className="text-right">
                           <a
-                            href="javascript:void(0)"
+                            href='#'
                             className="btn btn-secondary btn-sm"
                           >
                             Manage
@@ -1830,7 +1824,7 @@ class Home extends Component {
                           </div>
                         </td>
                         <td>
-                          <a className="icon" href="javascript:void(0)">
+                          <a className="icon" href='#'>
                             <i className="fe fe-edit" />
                           </a>
                         </td>
@@ -1853,7 +1847,7 @@ class Home extends Component {
                         <td>$1200</td>
                         <td className="text-right">
                           <a
-                            href="javascript:void(0)"
+                            href='#'
                             className="btn btn-secondary btn-sm"
                           >
                             Manage
@@ -1868,7 +1862,7 @@ class Home extends Component {
                           </div>
                         </td>
                         <td>
-                          <a className="icon" href="javascript:void(0)">
+                          <a className="icon" href='#'>
                             <i className="fe fe-edit" />
                           </a>
                         </td>
@@ -1891,7 +1885,7 @@ class Home extends Component {
                         <td>$534</td>
                         <td className="text-right">
                           <a
-                            href="javascript:void(0)"
+                            href='#'
                             className="btn btn-secondary btn-sm"
                           >
                             Manage
@@ -1906,7 +1900,7 @@ class Home extends Component {
                           </div>
                         </td>
                         <td>
-                          <a className="icon" href="javascript:void(0)">
+                          <a className="icon" href='#'>
                             <i className="fe fe-edit" />
                           </a>
                         </td>
@@ -1930,7 +1924,7 @@ class Home extends Component {
                         <td>$1500</td>
                         <td className="text-right">
                           <a
-                            href="javascript:void(0)"
+                            href='#'
                             className="btn btn-secondary btn-sm"
                           >
                             Manage
@@ -1945,7 +1939,7 @@ class Home extends Component {
                           </div>
                         </td>
                         <td>
-                          <a className="icon" href="javascript:void(0)">
+                          <a className="icon" href='#'>
                             <i className="fe fe-edit" />
                           </a>
                         </td>
@@ -1968,7 +1962,7 @@ class Home extends Component {
                         <td>$648</td>
                         <td className="text-right">
                           <a
-                            href="javascript:void(0)"
+                            href='#'
                             className="btn btn-secondary btn-sm"
                           >
                             Manage
@@ -1983,7 +1977,7 @@ class Home extends Component {
                           </div>
                         </td>
                         <td>
-                          <a className="icon" href="javascript:void(0)">
+                          <a className="icon" href='#'>
                             <i className="fe fe-edit" />
                           </a>
                         </td>
@@ -2007,7 +2001,7 @@ class Home extends Component {
                         <td>$300</td>
                         <td className="text-right">
                           <a
-                            href="javascript:void(0)"
+                            href='#'
                             className="btn btn-secondary btn-sm"
                           >
                             Manage
@@ -2022,7 +2016,7 @@ class Home extends Component {
                           </div>
                         </td>
                         <td>
-                          <a className="icon" href="javascript:void(0)">
+                          <a className="icon" href='#'>
                             <i className="fe fe-edit" />
                           </a>
                         </td>

@@ -4,7 +4,6 @@ import {
   Home,
   Gallery,
   Forms,
-  Documentation,
   Email,
   EmptyPage,
   Error400,

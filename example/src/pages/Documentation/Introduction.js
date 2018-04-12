@@ -1,6 +1,6 @@
 import React, { Component } from "react";
 
-import { Page, Text, Header, Code, Card, Icon } from "react-tabler-components";
+import { Text, Header, Code, Card, Icon } from "react-tabler-components";
 
 import DocsWrapper from "./DocsWrapper";
 import SyntaxHighlighter from "react-syntax-highlighter/prism";

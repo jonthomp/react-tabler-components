@@ -7,7 +7,7 @@ import Sidebar from "./Sidebar";
 
 class DocsWrapper extends Component {
   render() {
-    const { children, title } = this.props;
+    const { children } = this.props;
     return (
       <SiteWrapper>
         <Page.ContentWithSidebar
