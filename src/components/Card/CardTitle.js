@@ -1,14 +1,21 @@
-import React from "react";
-import PropTypes from "prop-types";
+// @flow
+
+import * as React from "react";
 import cn from "classnames";
 
-const CardTitle = ({ className, as: Component, ...props }) => {
+type Props = {|
+  +children?: React.Node,
+  +className?: string,
+  +as: React.ElementType
+|};
+
+const CardTitle = ({
+  className,
+  as: Component,
+  ...props
+}: Props): React.Node => {
   const classes = cn("card-title", className);
   return <Component className={classes} {...props} />;
-};
-
-CardTitle.propTypes = {
-  as: PropTypes.node
 };
 
 CardTitle.defaultProps = {

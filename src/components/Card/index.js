@@ -1,10 +1,5 @@
-import Card from "./Card";
-import CardHeader from "./CardHeader";
-import CardBody from "./CardBody";
-import CardTitle from "./CardTitle";
+// @flow
 
-Card.Header = CardHeader;
-Card.Body = CardBody;
-Card.Title = CardTitle;
+import Card from "./Card";
 
 export { Card as default };

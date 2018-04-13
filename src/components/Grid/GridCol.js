@@ -1,8 +1,27 @@
-import React from "react";
-import PropTypes from "prop-types";
+// @flow
+
+import * as React from "react";
 import cn from "classnames";
 
-const GridCol = ({ className, width, sm, md, lg, auto, ...props }) => {
+type Props = {|
+  +children?: React.Node,
+  +className?: string,
+  +width?: number,
+  +sm?: number,
+  +md?: number,
+  +lg?: number,
+  +auto?: boolean
+|};
+
+const GridCol = ({
+  className,
+  width = 0,
+  sm = 0,
+  md = 0,
+  lg = 0,
+  auto,
+  ...props
+}: Props): React.Node => {
   const classes = cn(
     {
       col: true,
@@ -15,22 +34,6 @@ const GridCol = ({ className, width, sm, md, lg, auto, ...props }) => {
     className
   );
   return <div className={classes} {...props} />;
-};
-
-GridCol.propTypes = {
-  auto: PropTypes.bool,
-  width: PropTypes.number,
-  sm: PropTypes.number,
-  md: PropTypes.number,
-  lg: PropTypes.number
-};
-
-GridCol.defaultProps = {
-  auto: false,
-  width: null,
-  sm: null,
-  md: null,
-  lg: null
 };
 
 export default GridCol;

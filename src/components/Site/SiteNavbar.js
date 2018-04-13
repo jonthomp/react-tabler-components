@@ -1,6 +1,13 @@
-import React from "react";
+// @flow
+
+import * as React from "react";
 import { Container, Header, Nav } from "../";
-const SiteNav = props => (
+
+type Props = {|
+  +children?: React.Node
+|};
+
+const SiteNav = (props: Props): React.Node => (
   <div className="header-nav d-none d-lg-flex">
     <Container>{props.children}</Container>
   </div>

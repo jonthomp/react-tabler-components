@@ -1,11 +1,26 @@
-import React from "react";
-import PropTypes from "prop-types";
+// @flow
+import * as React from "react";
+
 import cn from "classnames";
 import CardHeader from "./CardHeader";
 import CardTitle from "./CardTitle";
 import CardBody from "./CardBody";
 
-const Card = ({ className, as: Component, title, body, ...props }) => {
+type Props = {|
+  +children?: React.Node,
+  +className?: string,
+  +title?: string,
+  +body?: React.Node,
+  +as: React.ElementType
+|};
+
+const Card = ({
+  className,
+  as: Component,
+  title,
+  body,
+  ...props
+}: Props): React.Node => {
   const classes = cn("card", className);
   const card_header =
     title === "" ? null : (
@@ -27,16 +42,13 @@ const Card = ({ className, as: Component, title, body, ...props }) => {
   }
 };
 
-Card.propTypes = {
-  body: PropTypes.node,
-  title: PropTypes.string,
-  as: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
-};
-
 Card.defaultProps = {
-  body: null,
   title: "",
   as: "div"
 };
+
+Card.Header = CardHeader;
+Card.Body = CardBody;
+Card.Title = CardTitle;
 
 export default Card;

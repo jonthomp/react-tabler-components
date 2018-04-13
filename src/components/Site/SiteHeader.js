@@ -1,7 +1,13 @@
-import React from "react";
+// @flow
+
+import * as React from "react";
 import { Container } from "../";
 
-const SiteHeader = ({ children, ...rest }) => (
+type Props = {|
+  +children?: React.Node
+|};
+
+const SiteHeader = ({ children, ...rest }: Props): React.Node => (
   <div className="header" {...rest}>
     <Container>{children}</Container>
   </div>
