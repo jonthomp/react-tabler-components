@@ -135,10 +135,81 @@ class Forms extends Component {
                 </Form.InputGroup>
               </Form.Group>
 
-              <Form.Group label="Input Icon" />
+              <Form.Group label="Input Icon">
+                <Form.Input
+                  icon="search"
+                  placeholder="Search for..."
+                  position="append"
+                  className={"mb-3"}
+                />
+                <Form.Input icon="user" placeholder="Username" />
+              </Form.Group>
+
+              <Form.Group label="Seperated Inputs">
+                <Form.Input
+                  icon="search"
+                  placeholder="Search for..."
+                  position="append"
+                  className={"mb-3"}
+                />
+                <Grid.Row gutters="xs">
+                  <Grid.Col>
+                    <Form.Input placeholder="Search for..." />
+                  </Grid.Col>
+                  <Grid.Col auto>
+                    <Button secondary icon="search" />
+                  </Grid.Col>
+                </Grid.Row>
+              </Form.Group>
+
+              <Form.Group label="ZIP Code">
+                <Grid.Row gutters="xs">
+                  <Grid.Col>
+                    <Form.Input placeholder="Search for..." />
+                  </Grid.Col>
+                  <Grid.Col auto className="align-self-center">
+                    <Form.Help
+                      data-toggle="popover"
+                      data-placement="top"
+                      data-content="<p>ZIP Code must be US or CDN format. You can use an extended ZIP+4 code to determine address more accurately.</p>
+                              <p class='mb-0'><a href=''>USP ZIP codes lookup tools</a></p>
+                              "
+                      data-original-title=""
+                      title=""
+                    />
+                  </Grid.Col>
+                </Grid.Row>
+              </Form.Group>
             </Grid.Col>
             <Grid.Col md={6} lg={4}>
-              2
+              <Form.Group label="Password">
+                <Form.Input
+                  type="password"
+                  name="example-password-input"
+                  placeholder="Password..."
+                />
+              </Form.Group>
+
+              <Form.Group label="Valid State">
+                <Form.Input valid placeholder="Is Valid" />
+                <Form.Input tick placeholder="Tick" className="mt-3" />
+              </Form.Group>
+
+              <Form.Group label="Invalid State">
+                <Form.Input
+                  invalid
+                  feedback="Invalid feedback"
+                  placeholder="Is Invalid"
+                />
+                <Form.Input cross placeholder="Cross" className="mt-3" />
+              </Form.Group>
+
+              <Form.Group label="Select">
+                <Form.Select>
+                  <option>United Kingdom</option>
+                  <option>Germany</option>
+                </Form.Select>
+              </Form.Group>
             </Grid.Col>
             <Grid.Col md={6} lg={4}>
               3
