@@ -5,6 +5,7 @@ import cn from "classnames";
 const GridCol = ({ className, width, sm, md, lg, auto, ...props }) => {
   const classes = cn(
     {
+      col: true,
       [`col-${width}`]: width,
       [`col-sm-${sm}`]: sm,
       [`col-md-${md}`]: md,
