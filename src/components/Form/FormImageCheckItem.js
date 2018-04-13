@@ -19,7 +19,7 @@ const FormImageCheckItem = ({
           value={value}
           className="imagecheck-input"
         />
-        <figure class="imagecheck-figure">
+        <figure className="imagecheck-figure">
           <img src={image} alt="Select" className="imagecheck-image" />
         </figure>
       </label>

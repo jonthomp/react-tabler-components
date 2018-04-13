@@ -7,7 +7,7 @@ const FormColorCheckItem = ({ className, color, ...props }) => {
   const classes = cn(className);
   return (
     <Grid.Col auto className={classes} {...props}>
-      <label class="colorinput">
+      <label className="colorinput">
         <input
           name="color"
           type="checkbox"
