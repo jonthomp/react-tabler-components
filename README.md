@@ -1,4 +1,6 @@
-# react-tabler-components
+# IMPORTANT: WE HAVE MOVED TO THE OFFICIAL TABLER PROJECT REPOSITORY https://github.com/tabler/tabler-react
+
+## react-tabler-components
 
 > A WIP collection of React components for [Tabler](https://github.com/tabler/tabler)
 
