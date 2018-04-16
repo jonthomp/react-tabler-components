@@ -1,16 +1,18 @@
-import React from "react";
-import PropTypes from "prop-types";
+// @flow
 
-const SiteLogo = props => (
+import * as React from "react";
+
+type Props = {|
+  +children?: React.Node,
+  +href: string,
+  +src: string,
+  +alt: string
+|};
+
+const SiteLogo = (props: Props): React.Node => (
   <a className="navbar-brand" href={props.href}>
     <img src={props.src} className="navbar-brand-img" alt={props.alt} />
   </a>
 );
-
-SiteLogo.propTypes = {
-  href: PropTypes.string.isRequired,
-  src: PropTypes.string.isRequired,
-  alt: PropTypes.string.isRequired
-};
 
 export default SiteLogo;

@@ -1,3 +1,5 @@
+// @flow
+
 import GridRow from "./GridRow";
 import GridCol from "./GridCol";
 

@@ -1,24 +1,31 @@
-import React from "react";
-import PropTypes from "prop-types";
+// @flow
+
+import * as React from "react";
 import cn from "classnames";
 
-const GridRow = ({ className, cards, gutters, ...props }) => {
-  const classes = cn(
+type Props = {|
+  +children?: React.Node,
+  +className?: string,
+  +cards?: boolean,
+  +gutters?: "" | "xs" | "sm" | "md" | "lg"
+|};
+
+const GridRow = ({
+  className,
+  cards = false,
+  gutters = "",
+  ...props
+}: Props): React.Node => {
+  const classes: string = cn(
     `row`,
-    { row: true, "row-cards": cards, [`gutters-${gutters}`]: gutters },
+    {
+      row: true,
+      "row-cards": cards,
+      [`gutters-${gutters}`]: gutters
+    },
     className
   );
   return <div className={classes} {...props} />;
-};
-
-GridRow.propTypes = {
-  cards: PropTypes.bool,
-  gutters: PropTypes.oneOf(["xs", "sm", "md", "lg"])
-};
-
-GridRow.defaultProps = {
-  cards: false,
-  gutters: null
 };
 
 export default GridRow;

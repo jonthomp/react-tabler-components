@@ -1,9 +1,24 @@
-import React from "react";
-import PropTypes from "prop-types";
+// @flow
+import * as React from "react";
 
 import { Grid, Card, Container } from "../";
 
-const PageCard = ({ children, title, header, footer, as, ...rest }) => (
+type Props = {|
+  +children?: React.Node,
+  +title?: string,
+  +header?: React.Node,
+  +footer?: React.Node,
+  +as: React.ElementType
+|};
+
+const PageCard = ({
+  children,
+  title,
+  header,
+  footer,
+  as,
+  ...rest
+}: Props): React.Node => (
   <div className="my-3 my-md-5">
     <Container>
       <Grid.Row>
@@ -23,19 +38,5 @@ const PageCard = ({ children, title, header, footer, as, ...rest }) => (
     </Container>
   </div>
 );
-
-PageCard.propTypes = {
-  title: PropTypes.string,
-  header: PropTypes.node,
-  footer: PropTypes.node,
-  as: PropTypes.oneOfType([PropTypes.node, PropTypes.func])
-};
-
-PageCard.defaultProps = {
-  title: null,
-  header: null,
-  footer: null,
-  as: null
-};
 
 export default PageCard;

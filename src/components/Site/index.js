@@ -1,3 +1,5 @@
+// @flow
+
 import SiteHeader from "./SiteHeader";
 import SiteNavbar from "./SiteNavbar";
 import SiteLogo from "./SiteLogo";

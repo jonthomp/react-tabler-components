@@ -1,7 +1,20 @@
-import React from "react";
+// @flow
+
+import * as React from "react";
 import { Page, Grid } from "../";
 
-const PageContentWithSidebar = ({ children, header, sidebar, ...rest }) => (
+type Props = {|
+  +children?: React.Node,
+  +header?: React.Node,
+  +sidebar?: React.Node
+|};
+
+const PageContentWithSidebar = ({
+  children,
+  header,
+  sidebar,
+  ...rest
+}: Props): React.Node => (
   <Page.Content>
     {header}
     <Grid.Row>
